@@ -95,33 +95,7 @@ function showClientWork() {
 
   // Create array of project data
   // keep in mind you may need to change img locations once you launch
-  const projectData = [
-    // Bobs Bowling
-    {
-      cardHeaderData: "Bob's Bowling",
-      cardImageData: "./img/projects/bobs_bowling1.png",
-      cardLabelYearData: "2021",
-      cardLabelBizTypeData: "Bowling Alley",
-      cardLabelCategoryData: "Small Business",
-      cardDescriptionData:
-        "Bob’s Bowling is a fictional company for which I designed a website in order to showcase the kind of product my clients can expect to receive. This website is an example of the custom solutions I offer. Click the link below to visit and see for yourself!",
-      githubData: "https://github.com/RabbitEarsDesign/bowling_website",
-      websiteData: "https://relaxed-meninsky-b2c08d.netlify.app",
-    },
-
-    // Wordpress Site
-    {
-      cardHeaderData: "Ski Colorado",
-      cardImageData: "./img/projects/cover/coming_soon.jpg",
-      cardLabelYearData: "2021",
-      cardLabelBizTypeData: "Wordpress Site",
-      cardLabelCategoryData: "Small Business",
-      cardDescriptionData:
-        "'Ski Colorado' is a fictional Heli Skiing company. I built this in order to showcase an example of a site made using Wordpress. When you choose Rabbit Ears Design I spend the time getting to know your business needs in order to provide a solution that exceeds expectations.",
-      githubData: "https://github.com",
-      websiteData: "https://examplewebsite.website",
-    },
-  ];
+  const projectData = [];
 
   projectsArr.forEach((item) => {
     item.addEventListener("click", () => {
@@ -193,6 +167,32 @@ function showPersonalProjects() {
         "Moment Skis Gallery is a virtual museum built to showcase all of the unique topsheet graphics designed by Moment Skis since their founding over a decade ago. This is a project built entirely for personal enjoyment and is updated periodically when time allows. Ultimately it will be a place to learn about each ski and follow the history of the company as they continue designing rad art on skis. Click the link to explore for yourself!",
       githubData: "https://github.com/RabbitEarsDesign/moment_skis_gallery",
       websiteData: "https://momentskisgallery.com",
+    },
+
+    // Bobs Bowling
+    {
+      cardHeaderData: "Bob's Bowling",
+      cardImageData: "./img/projects/bobs_bowling1.png",
+      cardLabelYearData: "2021",
+      cardLabelBizTypeData: "Bowling Alley",
+      cardLabelCategoryData: "Small Business",
+      cardDescriptionData:
+        "Bob’s Bowling is a fictional company for which I designed a website in order to showcase the kind of product my clients can expect to receive. This website is an example of the custom solutions I offer. Click the link below to visit and see for yourself!",
+      githubData: "https://github.com/RabbitEarsDesign/bowling_website",
+      websiteData: "https://relaxed-meninsky-b2c08d.netlify.app",
+    },
+
+    // Wordpress Site
+    {
+      cardHeaderData: "Ski Colorado",
+      cardImageData: "./img/projects/cover/coming_soon.jpg",
+      cardLabelYearData: "2021",
+      cardLabelBizTypeData: "Wordpress Site",
+      cardLabelCategoryData: "Small Business",
+      cardDescriptionData:
+        "'Ski Colorado' is a fictional Heli Skiing company. I built this in order to showcase an example of a site made using Wordpress. When you choose Rabbit Ears Design I spend the time getting to know your business needs in order to provide a solution that exceeds expectations.",
+      githubData: "https://github.com",
+      websiteData: "https://examplewebsite.website",
     },
   ];
 
