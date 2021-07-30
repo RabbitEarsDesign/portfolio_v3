@@ -114,13 +114,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 @media (min-width: 767px) {
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -977,8 +977,20 @@ svg path:nth-child(8) {
 }
 
 .logo__inline {
-  width: 300px;
+  width: 100px;
   margin: 0 auto;
+}
+
+@media (min-width: 499px) {
+  .logo__inline {
+    width: 200px;
+  }
+}
+
+@media (min-width: 767px) {
+  .logo__inline {
+    width: 300px;
+  }
 }
 
 .padding__header {
@@ -1400,17 +1412,8 @@ svg path:nth-child(8) {
 }
 
 .testimonials h3 {
-  padding-top: 2rem;
-  font-size: 1rem;
   font-weight: 100;
-  text-align: center;
   color: #fff;
-}
-
-@media (min-width: 767px) {
-  .testimonials h3 {
-    font-size: 1.5rem;
-  }
 }
 
 .testimonial {
