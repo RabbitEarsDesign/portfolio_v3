@@ -1,0 +1,33 @@
+.menu-wrap-desktop {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  margin-right: 2rem;
+
+  @media (min-width: 1023px) {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    li {
+      a {
+        color: var(--text-white);
+        p {
+          padding-left: 1rem;
+        }
+
+        &:hover {
+          font-weight: 900;
+        }
+
+        &.active {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+}

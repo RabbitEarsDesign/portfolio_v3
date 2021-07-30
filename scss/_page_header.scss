@@ -1,0 +1,30 @@
+.page {
+  &__header {
+    position: relative;
+    text-align: center;
+
+    // Main typography
+    &-text {
+      color: #fff;
+
+      font-style: italic;
+      font-weight: 900;
+      font-size: 2rem;
+      font-family: "Pricedown";
+      line-height: 0.95;
+      opacity: 1;
+
+      @media (min-width: 499px) {
+        font-size: 3rem;
+      }
+
+      @media (min-width: 767px) {
+        font-size: 4rem;
+      }
+
+      @media (min-width: 1079px) {
+        font-size: 5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.padding {
+  &__header {
+    padding: 3.5rem;
+
+    @media (min-width: 767px) {
+      padding: 4rem;
+    }
+  }
+
+  &__section {
+  }
+
+  &__widget {
+    padding: 2rem;
+  }
+
+  &__top-bottom-1 {
+    padding: 1rem 0;
+  }
+
+  &__top-bottom-2 {
+    padding: 2rem 0;
+  }
+
+  &__top-bottom-3 {
+    padding: 3rem 0;
+  }
+}

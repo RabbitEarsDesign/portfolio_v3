@@ -1,0 +1,73 @@
+.main {
+  &__header {
+    position: relative;
+    text-align: center;
+
+    // Main typography
+    &-text {
+      color: #fff;
+
+      font-style: italic;
+      font-weight: 900;
+      font-size: 1.7rem;
+      font-family: "Pricedown";
+      line-height: 0.95;
+      opacity: 1;
+
+      @media (min-width: 499px) {
+        font-size: 2rem;
+      }
+
+      @media (min-width: 767px) {
+        font-size: 3rem;
+      }
+
+      @media (min-width: 1079px) {
+        font-size: 4rem;
+      }
+    }
+
+    &--bg {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      text-align: center;
+
+      font-family: "Pricedown", sans-serif;
+      color: #fff;
+      opacity: 0.15;
+
+      // bg typography
+      div {
+        font-size: 3.5rem;
+        line-height: 0.85;
+        opacity: 0.55;
+
+        @media (min-width: 499px) {
+          font-size: 5.5rem;
+        }
+
+        @media (min-width: 1079px) {
+          font-size: 7rem;
+        }
+      }
+
+      @media (min-width: 499px) {
+        display: flex;
+        top: 20px;
+
+        font-size: 6rem;
+      }
+    }
+  }
+
+  &__cta {
+    @media (min-width: 499px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
