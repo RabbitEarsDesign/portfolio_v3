@@ -7,6 +7,8 @@
   padding: 1rem;
   margin-right: 2rem;
 
+  z-index: 1000;
+
   @media (min-width: 1023px) {
     display: block;
   }
@@ -21,11 +23,11 @@
         }
 
         &:hover {
-          font-weight: 900;
+          color: var(--color-primary);
         }
 
         &.active {
-          color: var(--color-primary);
+          font-weight: 900;
         }
       }
     }

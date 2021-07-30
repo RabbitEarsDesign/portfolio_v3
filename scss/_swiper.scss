@@ -1,0 +1,55 @@
+/* SWIPER JS CAROUSEL */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  transition: 250ms all;
+  filter: grayscale(100%);
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    z-index: 1;
+
+    &:before {
+      background: rgba($color: #000000, $alpha: 0);
+    }
+  }
+
+  .swiper-slide-header {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    font-size: 1.2rem;
+    font-weight: 900;
+
+    color: #ddd;
+  }
+}

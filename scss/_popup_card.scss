@@ -1,0 +1,159 @@
+.card {
+  display: none;
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  width: 70%;
+  max-width: 767px;
+
+  z-index: 1000;
+
+  overflow-y: auto;
+
+  transform: translateX(-50%);
+  transition: all 500ms ease;
+
+  background: #1a1919;
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+
+  &-close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    font-size: 20px;
+
+    z-index: 10000;
+
+    display: block;
+    color: var(--color-primary);
+    font-weight: 900;
+  }
+
+  .btn:nth-child(odd) {
+    filter: hue-rotate(200deg);
+  }
+  .card-image {
+    display: grid;
+    place-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .card-details {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 1rem;
+    text-align: left;
+
+    background: #1a1919;
+
+    .card-header {
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 10px 0;
+
+      font-size: 1.25rem;
+    }
+
+    .card-labels {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+
+      margin: 0;
+      padding: 0;
+
+      @media (min-width: 767px) {
+        font-size: 0.8rem;
+      }
+
+      p {
+        white-space: nowrap;
+
+        margin: 0;
+        padding: 0 3px 0px 0px;
+
+        font-size: 0.75rem;
+        color: #fff;
+        font-weight: 100;
+      }
+    }
+
+    .card-rating {
+      margin: 10px 0;
+      color: var(--color-primary);
+
+      i {
+        font-size: 0.75rem;
+      }
+    }
+
+    .card-description {
+      margin: 0;
+      margin-bottom: auto;
+      padding: 0;
+
+      flex-grow: 1;
+
+      font-size: 0.75rem;
+      color: #fff;
+      font-weight: 100;
+      line-height: 2;
+    }
+
+    .card-links {
+      .btn {
+        margin-left: 0;
+        &:first-child {
+          margin-right: 1rem;
+        }
+
+        &:nth-child(odd) {
+          filter: hue-rotate(200deg);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .card {
+    flex-direction: row;
+
+    .card-image {
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+
+      flex-basis: 50%;
+      // flex: 1 auto;
+    }
+
+    .card-details {
+      flex-basis: 50%;
+
+      .card-header {
+        font-size: 1.5rem;
+      }
+
+      .card-labels {
+        width: 50%;
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      .card-description {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

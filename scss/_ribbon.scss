@@ -1,0 +1,14 @@
+.ribbon {
+  margin: 0 auto;
+  // Modify the flex of the icons via their container
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &--icon {
+      font-size: 3rem;
+      color: var(--color-primary);
+    }
+  }
+}
