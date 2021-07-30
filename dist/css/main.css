@@ -343,10 +343,10 @@ h5 {
   }
 }
 
-@media (min-width: 599px) {
+@media (min-width: 499px) {
   .btn {
     display: inline-block;
-    width: 45%;
+    width: 40%;
   }
 }
 
@@ -710,17 +710,21 @@ h5 {
 }
 
 .padding__header {
-  padding: 3.5rem;
+  padding: 3.5rem 0;
 }
 
 @media (min-width: 767px) {
   .padding__header {
-    padding: 4rem;
+    padding: 4rem 0;
   }
 }
 
+.padding__section {
+  padding: 3rem 0;
+}
+
 .padding__widget {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .padding__top-bottom-1 {
@@ -742,6 +746,8 @@ h5 {
 }
 
 .banner {
+  position: absolute;
+  top: 0;
   text-align: center;
   color: var(--text-grey);
   width: 100%;
@@ -902,10 +908,10 @@ h5 {
   }
 }
 
-@media (min-width: 599px) {
+@media (min-width: 499px) {
   .btn {
     display: inline-block;
-    width: 45%;
+    width: 40%;
   }
 }
 
@@ -914,37 +920,37 @@ h5 {
   text-align: center;
 }
 
-.main__header-text {
-  color: #fff;
+.main__header--title {
+  color: var(--text-color);
   font-style: italic;
-  font-weight: 900;
-  font-size: 1.7rem;
   font-family: "Pricedown";
   line-height: 0.95;
   opacity: 1;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
 @media (min-width: 499px) {
-  .main__header-text {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 767px) {
-  .main__header-text {
+  .main__header--title {
     font-size: 3rem;
   }
 }
 
-@media (min-width: 1079px) {
-  .main__header-text {
+@media (min-width: 767px) {
+  .main__header--title {
     font-size: 4rem;
+  }
+}
+
+@media (min-width: 1067px) {
+  .main__header--title {
+    font-size: 5rem;
   }
 }
 
 .main__header--bg {
   position: absolute;
-  top: 10px;
+  top: 30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -962,13 +968,13 @@ h5 {
 
 @media (min-width: 499px) {
   .main__header--bg div {
-    font-size: 5.5rem;
+    font-size: 6rem;
   }
 }
 
-@media (min-width: 1079px) {
+@media (min-width: 1067px) {
   .main__header--bg div {
-    font-size: 7rem;
+    font-size: 11rem;
   }
 }
 
@@ -977,8 +983,7 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 20px;
-    font-size: 6rem;
+    top: 35px;
   }
 }
 
@@ -993,6 +998,10 @@ h5 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .main__cta a {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

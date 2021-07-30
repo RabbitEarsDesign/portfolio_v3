@@ -16,6 +16,8 @@
   letter-spacing: 4px;
   overflow: hidden;
 
+  // max-width: 400px;
+
   &:hover {
     background: var(--color-primary);
     color: #050801;
@@ -130,9 +132,9 @@
 }
 
 // Media
-@media (min-width: 599px) {
+@media (min-width: 499px) {
   .btn {
     display: inline-block;
-    width: 45%;
+    width: 40%;
   }
 }
