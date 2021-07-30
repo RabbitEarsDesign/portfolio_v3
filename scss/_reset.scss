@@ -107,3 +107,12 @@ h5 {
     font-size: 1rem;
   }
 }
+
+p {
+  line-height: 1.6;
+  font-size: 0.75rem;
+
+  @media (min-width: 767px) {
+    font-size: 0.9rem;
+  }
+}
