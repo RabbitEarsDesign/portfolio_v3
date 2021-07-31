@@ -4,21 +4,27 @@ if (links) {
     link.onclick = (e) => {
       let body = document.querySelector("body");
       e.preventDefault();
-      // in asynch handler do these actions
-      setTimeout(function () {
-        if (body.classList.contains("clicked")) {
-          console.log("navigating...");
-          if (!e.target.parentElement.href) {
-            window.location = e.target.href;
+      // if closing the card then don't execute transition
+      if (link.classList.contains("card-close")) {
+        console.log("Do not navigate");
+        return;
+      } else {
+        // in asynch handler do these actions
+        setTimeout(function () {
+          if (body.classList.contains("clicked")) {
+            console.log("navigating...");
+            if (!e.target.parentElement.href) {
+              window.location = e.target.href;
+            } else {
+              window.location = e.target.parentElement.href;
+            }
           } else {
-            window.location = e.target.parentElement.href;
+            console.group("oopsie", e.target.parentElement.href);
           }
-        } else {
-          console.group("oopsie", e.target.parentElement.href);
-        }
-      }, 2000);
+        }, 2000);
 
-      body.classList.add("clicked");
+        body.classList.add("clicked");
+      }
     };
   });
 }
