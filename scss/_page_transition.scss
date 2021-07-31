@@ -1,0 +1,92 @@
+@keyframes delay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.05);
+    -webkit-transform: scaleY(0.05);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+
+body {
+  &:before,
+  &:after {
+    content: "";
+    height: 50vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background: #000;
+    z-index: 10000;
+  }
+
+  &:before {
+    top: 0;
+    transform: translateY(-100%);
+  }
+  &:after {
+    bottom: 0;
+    transform: translateY(100%);
+  }
+
+  &.clicked::after,
+  &.clicked::before {
+    transform: translate(0%);
+    transition: transform 500ms linear;
+  }
+
+  &.clicked .loader {
+    opacity: 1;
+    transition-delay: 500ms;
+  }
+}
+
+.loader {
+  margin: 0 auto;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 50000;
+  opacity: 0;
+
+  > div {
+    height: 100%;
+    width: 8px;
+    display: inline-block;
+    float: left;
+    margin-left: 2px;
+    animation: delay 0.8s infinite ease-in-out;
+  }
+
+  .bar1 {
+    background-color: var(--color-primary);
+  }
+  .bar2 {
+    background-color: var(--color-secondary);
+    animation-delay: -0.7s;
+  }
+  .bar3 {
+    background-color: var(--color-primary);
+    animation-delay: -0.6s;
+  }
+  .bar4 {
+    background-color: var(--color-secondary);
+    animation-delay: -0.5s;
+  }
+  .bar5 {
+    background-color: var(--color-primary);
+    animation-delay: -0.4s;
+  }
+  .bar6 {
+    background-color: var(--color-secondary);
+    animation-delay: -0.3s;
+  }
+}
