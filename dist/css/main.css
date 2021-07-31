@@ -1583,7 +1583,7 @@ svg path:nth-child(8) {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 70%;
+  width: 90%;
   max-width: 767px;
   z-index: 1000;
   overflow-y: auto;
