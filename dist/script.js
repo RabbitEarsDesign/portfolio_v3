@@ -172,7 +172,7 @@ function showPersonalProjects() {
     // Bobs Bowling
     {
       cardHeaderData: "Bob's Bowling",
-      cardImageData: "./img/popup_pattern2.png",
+      cardImageData: "./img/popup_pattern1.png",
       cardLabelYearData: "2021",
       cardLabelBizTypeData: "Bowling Alley",
       cardLabelCategoryData: "Small Business",
