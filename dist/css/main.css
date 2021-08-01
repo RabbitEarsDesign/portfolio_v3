@@ -13,7 +13,7 @@
 }
 
 * {
-  --font-stack: "Poppins", sans-serif;
+  --font-stack: "Roboto", arial;
   /* Custimize your sign */
   --neon-size: 10vw;
   /*vw used for responsiveness */
@@ -22,6 +22,7 @@
   --neon-font: "Las Enter";
   --hamburger-menu-background-color: rgba(0, 0, 0, 0.8);
   --footer-color: #000;
+  --widget-background-dark: #1a1919;
   --text-white: #fff;
   --text-grey: #ccc;
   --color-primary: #f7347a;
@@ -712,10 +713,12 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 200vw;
+  height: 200vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: #000;
   z-index: 10000;
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.6, 0.05, 0.4, 1);
@@ -1405,12 +1408,12 @@ svg path:nth-child(8) {
 .testimonials .section-header {
   font-size: 2rem;
   font-weight: 400;
-  color: #fff;
+  color: var(--text-white);
 }
 
 .testimonials h3 {
   font-weight: 100;
-  color: #fff;
+  color: var(--text-white);
 }
 
 .testimonial {
@@ -1494,7 +1497,7 @@ svg path:nth-child(8) {
 .testimonial__top--quote {
   position: relative;
   text-align: center;
-  color: #ccc;
+  color: var(--text-grey);
 }
 
 .testimonial__top--quote p {
@@ -1533,7 +1536,7 @@ svg path:nth-child(8) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #1a1919;
+  background: var(--widget-background-dark);
   padding: 3rem 2rem 2rem 2rem;
 }
 
@@ -1542,7 +1545,7 @@ svg path:nth-child(8) {
   top: -25%;
   width: 80px;
   height: 80px;
-  border: 5px solid #1a1919;
+  border: 5px solid var(--widget-background-dark);
   border-radius: 50%;
 }
 
@@ -1563,7 +1566,7 @@ svg path:nth-child(8) {
 .testimonial__bottom--name {
   font-size: 1rem;
   font-weight: 900;
-  color: #fff;
+  color: var(--text-white);
   margin-bottom: 0.5rem;
   padding-top: 1rem;
 }
@@ -1571,7 +1574,7 @@ svg path:nth-child(8) {
 .testimonial__bottom--company {
   font-size: 0.6rem;
   font-weight: 400;
-  color: #ccc;
+  color: var(--text-grey);
 }
 
 .footer {
@@ -1591,10 +1594,10 @@ svg path:nth-child(8) {
           transform: translate(-50%, -50%);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  background: #1a1919;
+  background: var(--widget-background-dark);
   border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 20px -7px rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 0px 20px -7px rgba(255, 255, 255, 0.6);
 }
 
 .card-close {
@@ -1636,7 +1639,7 @@ svg path:nth-child(8) {
           flex-direction: column;
   padding: 2rem 1rem;
   text-align: left;
-  background: #1a1919;
+  background: var(--widget-background-dark);
 }
 
 .card .card-details .card-header {
@@ -1669,7 +1672,7 @@ svg path:nth-child(8) {
   margin: 0;
   padding: 0 3px 0px 0px;
   font-size: 0.75rem;
-  color: #fff;
+  color: var(--text-white);
   font-weight: 100;
 }
 
@@ -1690,7 +1693,7 @@ svg path:nth-child(8) {
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-size: 0.75rem;
-  color: #fff;
+  color: var(--text-white);
   font-weight: 100;
   line-height: 2;
 }

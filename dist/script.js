@@ -54,7 +54,7 @@ function preloader(callback) {
       const body = document.querySelector("body");
 
       body.classList.add("loaded");
-    }, 4500);
+    }, 4200);
     callback();
   };
 }
