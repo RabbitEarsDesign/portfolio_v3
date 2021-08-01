@@ -159,7 +159,7 @@ function showPersonalProjects() {
     // Moment Gallery
     {
       cardHeaderData: "Moment Skis Gallery",
-      cardImageData: "./img/projects/moment_skis_gallery2.png",
+      cardImageData: "./img/popup_pattern1.png",
       cardLabelYearData: "2021",
       cardLabelBizTypeData: "Ski Company",
       cardLabelCategoryData: "Outdoor Sports Industry",
@@ -172,7 +172,7 @@ function showPersonalProjects() {
     // Bobs Bowling
     {
       cardHeaderData: "Bob's Bowling",
-      cardImageData: "./img/projects/bobs_bowling1.png",
+      cardImageData: "./img/popup_pattern2.png",
       cardLabelYearData: "2021",
       cardLabelBizTypeData: "Bowling Alley",
       cardLabelCategoryData: "Small Business",
@@ -185,7 +185,7 @@ function showPersonalProjects() {
     // Wordpress Site
     {
       cardHeaderData: "Ski Colorado",
-      cardImageData: "./img/projects/cover/coming_soon.jpg",
+      cardImageData: "./img/popup_pattern1.png",
       cardLabelYearData: "2021",
       cardLabelBizTypeData: "Wordpress Site",
       cardLabelCategoryData: "Small Business",
