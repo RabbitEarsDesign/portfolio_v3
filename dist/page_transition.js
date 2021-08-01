@@ -21,7 +21,7 @@ if (links) {
           } else {
             console.group("oopsie", e.target.parentElement.href);
           }
-        }, 2000);
+        }, 1200);
 
         body.classList.add("clicked");
       }
