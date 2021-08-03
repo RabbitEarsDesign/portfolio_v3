@@ -44,7 +44,7 @@ function firstLoad() {
   }
 }
 
-firstLoad();
+// firstLoad();
 
 // Preload Function is used to apply loaded class to animation
 function preloader(callback) {

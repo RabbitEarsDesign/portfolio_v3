@@ -27,6 +27,7 @@
   --text-grey: #ccc;
   --color-primary: #f7347a;
   --color-secondary: #008d8a;
+  --color-white: #fff;
 }
 
 *,
@@ -1337,15 +1338,6 @@ svg path:nth-child(8) {
           align-items: center;
 }
 
-@media (max-width: 767px) {
-  .ribbon__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .ribbon__container--icon {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1358,11 +1350,7 @@ svg path:nth-child(8) {
 }
 
 .ribbon__container--icon:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  background: var(--widget-background-dark);
   color: var(--color-secondary);
-  border-radius: 10px;
 }
 
 .ribbon__container--icon .fas,
@@ -1374,14 +1362,6 @@ svg path:nth-child(8) {
 .ribbon__container--icon p {
   margin-right: 5px;
   margin-left: 5px;
-}
-
-.ribbon__container--icon:last-child:before {
-  content: "Free!";
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 1rem;
 }
 
 /* SWIPER JS CAROUSEL */
@@ -1419,7 +1399,7 @@ svg path:nth-child(8) {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .swiper-slide:hover {
@@ -2134,5 +2114,122 @@ body.clicked .loader {
   background-color: var(--color-secondary);
   -webkit-animation-delay: -0.3s;
           animation-delay: -0.3s;
+}
+
+.services__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 767px) {
+  .services__wrap {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1023px) {
+  .services__wrap {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.service figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.service .back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.service__container {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto 2rem auto;
+}
+
+.service__container:hover .service, .service__container:active .service, .service__container:focus .service {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.service__container:hover .fa-undo, .service__container:active .fa-undo, .service__container:focus .fa-undo {
+  opacity: 0;
+}
+
+.service .front {
+  background: #17108a;
+  background: -webkit-gradient(linear, left top, right top, from(#17108a), to(#008d8a));
+  background: linear-gradient(90deg, #17108a 0%, #008d8a 100%);
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+
+.service .front i:first-child {
+  margin-bottom: 2rem;
+}
+
+.service .back {
+  background: var(--widget-background-dark);
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  border-radius: 10px;
+}
+
+.service .fa-undo {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.service .btn {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
