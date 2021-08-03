@@ -1338,8 +1338,41 @@ svg path:nth-child(8) {
 }
 
 .ribbon__container--icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: 3rem;
+  color: var(--text-white);
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.ribbon__container--icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: var(--widget-background-dark);
   color: var(--color-secondary);
+  border-radius: 10px;
+}
+
+.ribbon__container--icon .fas,
+.ribbon__container--icon .fab {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.ribbon__container--icon p {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.ribbon__container--icon:last-child:before {
+  content: "Free!";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1rem;
 }
 
 /* SWIPER JS CAROUSEL */

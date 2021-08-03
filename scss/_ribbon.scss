@@ -1,5 +1,6 @@
 .ribbon {
   margin: 0 auto;
+
   // Modify the flex of the icons via their container
   &__container {
     display: flex;
@@ -7,8 +8,37 @@
     align-items: center;
 
     &--icon {
+      flex: 1;
       font-size: 3rem;
-      color: var(--color-secondary);
+      color: var(--text-white);
+      text-align: center;
+      transition: all 0.2s linear;
+
+      &:hover {
+        transform: scale(1.2);
+        background: var(--widget-background-dark);
+        color: var(--color-secondary);
+        border-radius: 10px;
+      }
+
+      .fas,
+      .fab {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+
+      &:last-child:before {
+        content: "Free!";
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 1rem;
+      }
     }
   }
 }
