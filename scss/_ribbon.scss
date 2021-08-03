@@ -7,6 +7,10 @@
     justify-content: space-around;
     align-items: center;
 
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+
     &--icon {
       flex: 1;
       font-size: 3rem;
@@ -15,7 +19,7 @@
       transition: all 0.2s linear;
 
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.05);
         background: var(--widget-background-dark);
         color: var(--color-secondary);
         border-radius: 10px;
