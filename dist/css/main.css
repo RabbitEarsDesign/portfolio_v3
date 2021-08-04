@@ -1235,7 +1235,7 @@ svg path:nth-child(8) {
 
 .main__header--bg {
   position: absolute;
-  top: 30px;
+  top: 60px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1268,7 +1268,7 @@ svg path:nth-child(8) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 35px;
+    top: 50px;
   }
 }
 

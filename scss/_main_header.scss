@@ -30,7 +30,7 @@
     // bg typography
     &--bg {
       position: absolute;
-      top: 30px;
+      top: 60px;
       left: 50%;
       transform: translateX(-50%);
 
@@ -56,7 +56,7 @@
 
       @media (min-width: 499px) {
         display: flex;
-        top: 35px;
+        top: 50px;
       }
     }
   }
