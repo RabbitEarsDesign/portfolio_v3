@@ -52,6 +52,8 @@
 
 // Styles
 .service {
+  position: relative;
+
   text-align: center;
   margin: 2rem;
 
@@ -67,4 +69,11 @@
     width: 100%;
     margin: 0 auto;
   }
+}
+
+.free::before {
+  content: "Free!";
+  position: absolute;
+  right: 0;
+  top: 0;
 }

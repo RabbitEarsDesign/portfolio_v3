@@ -2200,6 +2200,7 @@ body.clicked .loader {
 }
 
 .service {
+  position: relative;
   text-align: center;
   margin: 2rem;
 }
@@ -2215,5 +2216,12 @@ body.clicked .loader {
 .service .btn {
   width: 100%;
   margin: 0 auto;
+}
+
+.free::before {
+  content: "Free!";
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 /*# sourceMappingURL=main.css.map */
