@@ -1,107 +1,70 @@
+// Section: B Testimonials
 .services {
-  // Style the flex of the service cards
-  &__wrap {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 3rem;
+  .section-header {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text-white);
+  }
 
-    @media (min-width: 767px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  h3 {
+    // font-size: 1rem;
+    font-weight: 100;
 
-    @media (min-width: 1023px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    color: var(--text-white);
   }
 }
 
-// Card flip animation
+// FLEX
 .service {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  transition: transform 0.3s ease-in-out;
-  transform-style: preserve-3d;
-
-  figure {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin: 0;
-    backface-visibility: hidden;
-  }
-
-  .back {
-    transform: rotateY(-180deg);
-  }
-
-  // Style the size and hover effect of the card using the container
-  &__container {
-    width: 300px;
-    height: 400px;
-    margin: 0 auto 2rem auto;
-
-    &:hover,
-    &:active,
-    &:focus {
-      .service {
-        transform: rotateY(180deg);
-      }
+  color: var(--text-white);
+  &__wrap {
+    &--outer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
     }
 
-    &:hover,
-    &:active,
-    &:focus {
-      .fa-undo {
-        opacity: 0;
+    &--inner {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      @media (min-width: 767px) {
+        width: 50%;
+      }
+
+      @media (min-width: 1024px) {
+        width: 33.3%;
       }
     }
+  }
+
+  p {
+    display: flex;
+    flex: 1;
   }
 }
 
-// Service card styles
+// Styles
 .service {
-  .front {
-    background: rgb(23, 16, 138);
-    background: linear-gradient(
-      90deg,
-      rgba(23, 16, 138, 1) 0%,
-      rgba(0, 141, 138, 1) 100%
-    );
-    color: var(--color-white);
+  text-align: center;
+  margin: 2rem;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 10px;
-
-    i:first-child {
-      margin-bottom: 2rem;
-    }
+  h3 {
+    margin: 1rem 0;
   }
 
-  .back {
-    background: var(--widget-background-dark);
-    color: var(--color-white);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    padding: 0 2rem;
-
-    border-radius: 10px;
-  }
-
-  .fa-undo {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
+  p {
+    margin: 1rem 0;
   }
 
   .btn {
     width: 100%;
+    margin: 0 auto;
   }
 }

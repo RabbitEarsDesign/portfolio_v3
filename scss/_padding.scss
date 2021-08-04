@@ -1,18 +1,18 @@
 .padding {
   &__header {
-    padding: 3.5rem 0;
+    padding: 4rem 0;
 
     @media (min-width: 767px) {
-      padding: 4rem 0;
+      padding: 5rem 0;
     }
   }
 
   &__section {
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
 
   &__widget {
-    padding: 2rem 0;
+    padding: 3rem 0;
   }
 
   &-1 {
