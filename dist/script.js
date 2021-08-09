@@ -156,6 +156,19 @@ function showPersonalProjects() {
   // Create array of project data
   // keep in mind you may need to change img locations once you launch
   const projectData = [
+    // Dog Boarding
+    {
+      cardHeaderData: "Dog Boarding",
+      cardImageData: "./img/popup_moment.png",
+      cardLabelYearData: "2021",
+      cardLabelBizTypeData: "Dog Boarding",
+      cardLabelCategoryData: "Small Business",
+      cardDescriptionData:
+        "Dog Boarding as a website built as an exercise in writtting code that can be reused for future projects. Each component is flexbile for uses on other websites.",
+      githubData: "https://github.com/RabbitEarsDesign/dog_boarding",
+      websiteData: "https://keen-kare-e319e9.netlify.app",
+    },
+
     // Moment Gallery
     {
       cardHeaderData: "Moment Skis Gallery",
