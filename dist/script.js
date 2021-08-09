@@ -159,7 +159,7 @@ function showPersonalProjects() {
     // Dog Boarding
     {
       cardHeaderData: "Dog Boarding",
-      cardImageData: "./img/popup_moment.png",
+      cardImageData: "./img/popup_dog_boarding.png",
       cardLabelYearData: "2021",
       cardLabelBizTypeData: "Dog Boarding",
       cardLabelCategoryData: "Small Business",
