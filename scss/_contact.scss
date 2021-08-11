@@ -1,9 +1,16 @@
 .contact {
   text-align: center;
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
 
+  @media (min-width: 767px) {
+    width: 50%;
+  }
   .contact-header {
     margin-bottom: 20px;
     color: #fff;
+
     h4 {
       font-size: 2rem;
       font-weight: 100;
@@ -12,18 +19,13 @@
 
     p {
       color: #fff;
-      font-size: 0.8rem;
+      font-size: 1rem;
       text-align: center;
       line-height: 1.6;
       margin-top: 2rem;
       span {
         font-weight: 900;
       }
-    }
-
-    .bottom-line {
-      margin: 0 auto;
-      margin-bottom: 10px;
     }
   }
 
@@ -32,9 +34,6 @@
     text-align: center;
     color: #fff;
 
-    @media (min-width: 767px) {
-      width: 60%;
-    }
     h3 {
       font-size: 1rem;
       margin-bottom: 1rem;
