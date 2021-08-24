@@ -36,10 +36,13 @@
 
       @media (min-width: 767px) {
         width: 50%;
+        width: 100%;
       }
 
       @media (min-width: 1024px) {
         width: 33.3%;
+        width: 100%;
+        max-width: 400px;
       }
     }
   }
@@ -121,6 +124,12 @@
       height: 80px;
       border: 5px solid var(--widget-background-dark);
       border-radius: 50%;
+
+      i {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      }
 
       img {
         border-radius: 50%;

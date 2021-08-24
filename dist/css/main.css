@@ -171,6 +171,11 @@ p {
   background: var(--color-primary);
 }
 
+.border {
+  border: 1px solid var(--color-primary);
+  padding: 1rem 2rem;
+}
+
 .btn {
   text-align: center;
   margin: 1rem;
@@ -1477,12 +1482,15 @@ svg path:nth-child(8) {
 @media (min-width: 767px) {
   .testimonial__wrap--inner {
     width: 50%;
+    width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
   .testimonial__wrap--inner {
     width: 33.3%;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
@@ -1569,6 +1577,12 @@ svg path:nth-child(8) {
   height: 80px;
   border: 5px solid var(--widget-background-dark);
   border-radius: 50%;
+}
+
+.testimonial__bottom--image i {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .testimonial__bottom--image img {
@@ -2183,6 +2197,7 @@ body.clicked .loader {
 @media (min-width: 1024px) {
   .service__wrap--inner {
     width: 33.3%;
+    width: 50%;
   }
 }
 
@@ -2198,11 +2213,18 @@ body.clicked .loader {
 .service {
   position: relative;
   text-align: center;
-  margin: 2rem;
+  margin: 2rem auto;
+  max-width: 350px;
+}
+
+.service h4 {
+  margin: 3rem 0 1rem 0;
 }
 
 .service h3 {
-  margin: 1rem 0;
+  margin: 2rem 0 1rem 0;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 .service p {
@@ -2211,7 +2233,7 @@ body.clicked .loader {
 
 .service .btn {
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .free::before {
