@@ -41,6 +41,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -1376,12 +1377,6 @@ svg path:nth-child(8) {
   width: 100%;
   height: 100%;
   position: relative;
-  overflow-x: hidden;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
 }
 
 .swiper-slide img {
@@ -1394,6 +1389,10 @@ svg path:nth-child(8) {
 }
 
 .swiper-slide {
+  -webkit-box-shadow: 0px 0px 30px -20px #f4f4f4;
+          box-shadow: 0px 0px 30px -20px #f4f4f4;
+  text-align: center;
+  font-size: 18px;
   -webkit-transition: 250ms all;
   transition: 250ms all;
   -webkit-filter: grayscale(100%);
