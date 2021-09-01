@@ -95,7 +95,20 @@ function showClientWork() {
 
   // Create array of project data
   // keep in mind you may need to change img locations once you launch
-  const projectData = [];
+  const projectData = [
+    // SCG Smart Bikes
+    {
+      cardHeaderData: "SCG Smart Bikes",
+      cardImageData: "./img/projects/smart_bikes_2.png",
+      cardLabelYearData: "2021",
+      cardLabelBizTypeData: "Smart Bikes",
+      cardLabelCategoryData: "Small Business",
+      cardDescriptionData:
+        "SCG Smart Bikez is a landing page based website that was built to help Smart Citiez Group manage customer information and prioratize requests for test rides and closed deals. The deliverable was a lightinng fast SEO optimized site that collects info from interested customers and aggregates it into a spreadsheet.",
+      githubData: "https://github.com/RabbitEarsDesign/dog_boarding",
+      websiteData: "https://keen-kare-e319e9.netlify.app",
+    },
+  ];
 
   projectsArr.forEach((item) => {
     item.addEventListener("click", () => {
